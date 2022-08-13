@@ -1,15 +1,17 @@
 <template>
   <div>
     <Header/>
-    <router-view/>
+    <design/>
+
     <Footer/>
   </div>
 </template>
 <script>
   import Header from './layouts/Header';
   import Footer from './layouts/Footer';
+import Design from './layouts/Design.vue';
   export default{
-    components:{Header, Footer},
+    components:{Header, Footer, Design},
     computed:{
       user(){
         return this.$store.state.user;
